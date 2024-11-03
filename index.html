@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-app">
+        <header>
+            <h1>Weather App</h1>
+            <div class="search-bar">
+                <input type="text" id="location-input" placeholder="Enter Location...">
+                <button onclick="fetchWeather()">Search</button>
+            </div>
+            <div class="unit-toggle">
+                <button onclick="toggleUnits()">°C / °F</button>
+            </div>
+        </header>
+        
+        <section class="current-weather">
+            <h2 id="city-name">City Name</h2>
+            <p id="temperature">--°</p>
+            <div id="weather-icon" class="icon"></div>
+            <p id="weather-description">Weather Description</p>
+        </section>
+        
+        <section class="weekly-forecast">
+            <h3>Weekly Forecast</h3>
+            <div id="forecast" class="forecast-grid">
+                <!-- Forecast items will be populated here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
